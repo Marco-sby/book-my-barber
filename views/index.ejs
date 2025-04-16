@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hairdresser</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>We Take Care Of Your <br><span>Healthy Life Haircut</span></h1>
+      <p>We Are One Of The Best Hairdressers With Multiple Hair Specialists</p>
+      <a href="#book" class="btn">Book Now</a>
+    </div>
+    <div class="hero-img">
+      <img src="/images/haircut.png" alt="Haircut">
+    </div>
+  </section>
+
+  <section class="team" id="hairdresser">
+    <h2>Our Hairdresser</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="/images/Will.png" alt="Will">
+        <h3>Will</h3>
+        <p>Expert Comb Over Haircut</p>
+        <div class="social-icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/images/Connor.png" alt="Connor">
+        <h3>Connor</h3>
+        <p>Expert Undercut</p>
+        <div class="social-icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/images/Dan.png" alt="Dan">
+        <h3>Dan</h3>
+        <p>Fade Hair</p>
+        <div class="social-icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="review" id="review">
+    <h2>Customer's Review</h2>
+    <div class="review-container">
+      <div class="review-card">
+        <blockquote>“No Need To Wait For Your Hairdresser While He's Cutting Someone Else's Hair.”</blockquote>
+        <img src="/images/George.png" alt="George" />
+        <p>George</p>
+      </div>
+      <div class="review-card">
+        <blockquote>“Best barbershop in town! Highly recommended.”</blockquote>
+        <img src="/images/John.png" alt="Connor" />
+        <p>John</p>
+      </div>
+      <div class="review-card">
+        <blockquote>“I always leave with a fresh, clean cut.”</blockquote>
+        <img src="/images/Brian.png" alt="Will" />
+        <p>Brian</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking" id="book">
+    <div class="booking-img">
+      <img src="/images/Hair_book.png" alt="Barber">
+    </div>
+    <form class="booking-form">
+      <h2><i class="fas fa-calendar-check"></i> Book Your Appointment</h2>
+      <p class="form-description">We’ll confirm by email or phone. It only takes 1 minute!</p>
+
+      <div class="input-icon">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="First name" required>
+      </div>
+
+      <div class="input-icon">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Last name" required>
+      </div>
+
+      <div class="input-icon">
+        <i class="fas fa-phone"></i>
+        <input type="text" placeholder="Your number" required>
+      </div>
+
+      <div class="input-icon">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="Your email" required>
+      </div>
+
+      <div class="input-icon">
+        <i class="fas fa-calendar-alt"></i>
+        <input type="date" required>
+      </div>
+
+      <div class="input-icon">
+        <i class="fas fa-clock"></i>
+        <select required>
+          <option disabled selected>Select a time</option>
+          <option>12:00 PM</option>
+          <option>12:30 PM</option>
+          <option>1:00 PM</option>
+          <option>1:30 PM</option>
+          <option>2:00 PM</option>
+          <option>2:30 PM</option>
+          <option>3:00 PM</option>
+          <option>3:30 PM</option>
+          <option>4:00 PM</option>
+          <option>4:30 PM</option>
+          <option>5:00 PM</option>
+          <option>5:30 PM</option>
+          <option>6:00 PM</option>
+          <option>6:30 PM</option>
+          <option>7:00 PM</option>
+          <option>7:30 PM</option>
+          <option>8:00 PM</option>
+          <option>8:30 PM</option>
+        </select>
+      </div>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <%- include('partials/footer') %>
+</script>
+
+<!-- AND this one too -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const reviews = document.querySelectorAll('.fade-carousel .review-card');
+    let current = 0;
+
+    function showReview(index) {
+      reviews.forEach((card, i) => {
+        card.style.opacity = i === index ? '1' : '0';
+        card.style.zIndex = i === index ? '1' : '0';
+      });
+    }
+
+    document.querySelector('.next').addEventListener('click', () => {
+      current = (current + 1) % reviews.length;
+      showReview(current);
+    });
+
+    document.querySelector('.prev').addEventListener('click', () => {
+      current = (current - 1 + reviews.length) % reviews.length;
+      showReview(current);
+    });
+
+    showReview(current);
+  });
+</script>
+  
+</body>
+</html>
+
+
