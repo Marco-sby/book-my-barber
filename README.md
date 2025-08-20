@@ -1,61 +1,58 @@
-# 💇 Hairdresser Appointment Web App
-This project combines **academic business research** with a **working prototype** for a barbershop appointment booking platform.
-It started as part of the Research Skills CA3 module, where I developed a complete**business plan** for a subscription-based men’s haircut scheduling service.
-The idea was then brought to life with a modern, responsive web app built with Node.js, EJS, HTML, CSS, and JavaScript.
+# 💈 Book My Barber — Hairdresser Appointment Web App
 
-📄 Business Plan
+This project combines **academic business research** with a **working prototype** for a barbershop appointment platform.  
+It began in the *Research Skills CA3* module, where I developed a complete **business plan** for a subscription-based men’s haircut scheduling service, and then built a modern, responsive prototype with **Node.js, Express, EJS, HTML, CSS, and JavaScript**.
 
-* The original business plan includes:
+---
 
-* Mission, vision, and values
+## 📄 Business Plan
 
-* SWOT analysis
+The original business plan includes:
 
-* 4 Ps of marketing
+- Mission, vision, and values  
+- SWOT analysis  
+- 4 Ps of marketing  
+- Stakeholder & benchmarking analysis  
+- Hypothesis testing with survey data  
+- Financial projections & revenue model  
+- Franchise growth strategy  
 
-* Stakeholder and benchmarking analysis
+👉 **Read the full document:**  
+[📕 Research Skills CA3 – Hairdresser Subscription Service](docs/research_skills_ca3.pdf)  
+*(Update the link if your file path/name is different.)*
 
-* Hypothesis testing with survey data
-
-* Financial projections and revenue model
-
-* Franchise growth strategy
-
-You can read the full document here:
-📕 Research Skills CA3 – Hairdresser Subscription Service
 ---
 
 ## 🚀 Features
 
-- ✅ Beautiful hero section with CTA
-- ✅ "Our Hairdresser" section showcasing team members
-- ✅ Booking form with styled inputs and icons
-- ✅ Customer reviews with profile photos
-- ✅ Responsive layout for all devices
-- ✅ Smooth scroll navigation with active link styling
-- ✅ Footer with social media and contact info
+- ✅ Beautiful hero section with CTA  
+- ✅ “Our Hairdresser” team showcase  
+- ✅ Booking form with styled inputs and icons  
+- ✅ Customer reviews with profile photos  
+- ✅ Responsive layout for all devices  
+- ✅ Smooth-scroll navigation with active link styling  
+- ✅ Footer with social media and contact info  
 
 ---
 
 ## 📁 Folder Structure
 
+```text
 project/
-├── docs/
-│   └── Research_skill_ca3.pdf
-├── public/
-│   ├── css/
-│   │   └── style.css
-│   └── images/
-│       └── haircut.png, team images, etc.
-├── views/
-│   ├── index.ejs
-│   └── partials/
-│       ├── header.ejs
-│       └── footer.ejs
-├── app.js
-└── README.md
-
----
+├─ docs/
+│  └─ research_skills_ca3.pdf
+├─ public/
+│  ├─ css/
+│  │  └─ style.css
+│  └─ images/
+│     └─ haircut.png, team images, etc.
+├─ views/
+│  ├─ index.ejs
+│  └─ partials/
+│     ├─ header.ejs
+│     └─ footer.ejs
+├─ app.js
+└─ README.md
 
 ## 🛠 Technologies Used
 
@@ -75,25 +72,28 @@ project/
 
 ---
 
-## 📦 How to Use
+## 📦 How to run locally
 
-1. Clone the repository:
+# clone
+git clone https://github.com/Marco-sby/book-my-barber.git
+cd book-my-barber
 
-```bash
-git clone https://github.com/your-username/hairdresser-appointment-app.git
-cd hairdresser-appointment-app
-```
-
-2. Serve with a local server (like `live-server` or via Express with EJS):
-
-```bash
+# install & start
 npm install
 npm start
-```
 
-> Or just open `index.ejs` with an EJS-compatible setup.
 
 ---
+Then open http://localhost:3000
+.
+
+If you don’t have Node/Express set up, you can still preview the HTML by opening the rendered EJS in a compatible environment, but the recommended way is running via app.js.
+
+☁️ Deployment
+
+This app uses EJS (server-rendered), so GitHub Pages won’t render it.
+Use a Node-friendly host such as Render, Railway, Fly.io, or Heroku.
+Typical steps: connect your repo → set build command npm install → start command npm start.
 
 ## ✨ To-Do (Optional Enhancements)
 
