@@ -53,7 +53,7 @@ project/
 │     └─ footer.ejs
 ├─ app.js
 └─ README.md
-
+---
 ## 🛠 Technologies Used
 
 - HTML5 / EJS (Embedded JavaScript Templates)
@@ -73,7 +73,7 @@ project/
 ---
 
 ## 📦 How to run locally
-
+---
 # clone
 git clone https://github.com/Marco-sby/book-my-barber.git
 cd book-my-barber
@@ -94,7 +94,7 @@ If you don’t have Node/Express set up, you can still preview the HTML by openi
 This app uses EJS (server-rendered), so GitHub Pages won’t render it.
 Use a Node-friendly host such as Render, Railway, Fly.io, or Heroku.
 Typical steps: connect your repo → set build command npm install → start command npm start.
-
+---
 ## ✨ To-Do (Optional Enhancements)
 
 - Add working form submission backend
