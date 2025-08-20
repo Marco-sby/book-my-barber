@@ -1,7 +1,28 @@
 # 💇 Hairdresser Appointment Web App
+This project combines **academic business research** with a **working prototype** for a barbershop appointment booking platform.
+It started as part of the Research Skills CA3 module, where I developed a complete**business plan** for a subscription-based men’s haircut scheduling service.
+The idea was then brought to life with a modern, responsive web app built with Node.js, EJS, HTML, CSS, and JavaScript.
 
-This is a modern and responsive single-page appointment website for a hair salon or barbershop. It includes interactive sections, smooth scrolling, and clean visuals, all built with **HTML**, **EJS**, and **CSS**.
+📄 Business Plan
 
+* The original business plan includes:
+
+* Mission, vision, and values
+
+* SWOT analysis
+
+* 4 Ps of marketing
+
+* Stakeholder and benchmarking analysis
+
+* Hypothesis testing with survey data
+
+* Financial projections and revenue model
+
+* Franchise growth strategy
+
+You can read the full document here:
+📕 Research Skills CA3 – Hairdresser Subscription Service
 ---
 
 ## 🚀 Features
@@ -18,24 +39,21 @@ This is a modern and responsive single-page appointment website for a hair salon
 
 ## 📁 Folder Structure
 
-```
 project/
-│
+├── docs/
+│   └── Research_skill_ca3.pdf
 ├── public/
-│   └── css/
-│       └── style.css
+│   ├── css/
+│   │   └── style.css
 │   └── images/
 │       └── haircut.png, team images, etc.
-│
 ├── views/
-│   └── index.ejs
+│   ├── index.ejs
 │   └── partials/
 │       ├── header.ejs
 │       └── footer.ejs
-│
-├── app.js (Node.js server setup – optional if you expand)
+├── app.js
 └── README.md
-```
 
 ---
 
