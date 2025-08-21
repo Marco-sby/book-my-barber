@@ -18,7 +18,7 @@ The original business plan includes:
 - Franchise growth strategy  
 
 👉 **Read the full document:**  
-[📕 Research Skills CA3 – Hairdresser Subscription Service](Doc/research_skills_ca3.pdf)  
+[📕 Research Skills CA3 – Hairdresser Subscription Service](Doc)  
 
 
 ---
